@@ -1,0 +1,40 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@paymentway-challenge/env": "workspace:*",
+    "@paymentway-challenge/ui": "workspace:*",
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-virtual": "^3.13.23",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "dotenv": "catalog:",
+    "lucide-react": "catalog:",
+    "nanoid": "^5.1.7",
+    "next": "15.2.0",
+    "next-themes": "catalog:",
+    "papaparse": "^5.5.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sonner": "catalog:",
+    "xlsx": "^0.18.5",
+    "zod": "catalog:",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@paymentway-challenge/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^20",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "^5",
+    "vitest": "^4.1.0"
+  }
+}

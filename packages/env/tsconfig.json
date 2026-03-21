@@ -1,0 +1,3 @@
+{
+  "extends": "@paymentway-challenge/config/tsconfig.base.json"
+}

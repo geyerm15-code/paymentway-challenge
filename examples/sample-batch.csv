@@ -1,0 +1,16 @@
+recipient_account,amount,currency,description
+10200345678,1500,COP,Salary March 2024
+10200345679,"1.500,50",COP,Supplier invoice TECH-001
+10200345680,$2000.00,USD,Q1 reimbursement
+10200345681,invalid_amount,COP,Bad amount row
+10200345682,500,XXX,Invalid currency row
+,800000,COP,Missing account row
+10200345684,500000,COP,
+10200345678,1500,COP,Salary March 2024
+90000000001,2000,COP,Unknown account test
+10200345685,1500,COP,Normal payment A
+10200345686,75000,COP,Normal payment B
+10200345687,120000,COP,Normal payment C
+10200345688,88000,USD,Normal payment D
+10200345689,33500,COP,Normal payment E
+10200345690,5000,EUR,Normal payment F
