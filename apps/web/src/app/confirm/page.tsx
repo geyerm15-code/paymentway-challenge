@@ -53,7 +53,7 @@ export default function ConfirmPage() {
         });
         const validateData = await validateRes.json();
         currentBatchId = validateData.batch_id;
-        setBatchId(currentBatchId);
+        if (currentBatchId) setBatchId(currentBatchId);
       }
 
       const idempotencyKey = crypto.randomUUID();
