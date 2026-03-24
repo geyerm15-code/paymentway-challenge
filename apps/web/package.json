@@ -16,7 +16,7 @@
     "dotenv": "catalog:",
     "lucide-react": "catalog:",
     "nanoid": "^5.1.7",
-    "next": "15.2.4",
+    "next": "15.3.0",
     "next-themes": "catalog:",
     "papaparse": "^5.5.3",
     "react": "19.0.0",
