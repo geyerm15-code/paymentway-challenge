@@ -5,7 +5,7 @@ import { PlusCircle, XCircle } from "lucide-react";
 import * as React from "react";
 import { Button } from "@paymentway-challenge/ui/components/button";
 import { Input } from "@paymentway-challenge/ui/components/input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@paymentway-challenge/ui/components/label";
 import {
   Popover,
   PopoverContent,

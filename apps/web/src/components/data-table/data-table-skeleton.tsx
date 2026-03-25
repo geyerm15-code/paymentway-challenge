@@ -1,4 +1,4 @@
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@paymentway-challenge/ui/components/skeleton";
 import {
   Table,
   TableBody,
