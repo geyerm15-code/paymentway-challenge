@@ -10,7 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@paymentway-challenge/ui/components/table";
-import { getColumnPinningStyle } from "@/src/types/data-table";
+import { getColumnPinningStyle } from "@/lib/data-table";
 import { cn } from "@paymentway-challenge/ui/lib/utils";
 
 interface DataTableProps<TData> extends React.ComponentProps<"div"> {
