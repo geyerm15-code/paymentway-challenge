@@ -22,7 +22,7 @@ import {
 } from "@paymentway-challenge/ui/components/popover";
 import { Separator } from "@paymentway-challenge/ui/components/separator";
 import { cn } from "@paymentway-challenge/ui/lib/utils";
-import type { Option } from "@/components/data-table/data-table";
+import type { Option } from "@/src/types/data-table";
 
 interface DataTableFacetedFilterProps<TData, TValue> {
   column?: Column<TData, TValue>;
