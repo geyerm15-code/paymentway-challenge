@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useBatchStore } from "@/store/batch-store";
 import { DataTable } from "@/components/data-table/data-table";
 import { paymentColumns } from "@/components/data-table/payment-columns";
+import { useReactTable, getCoreRowModel, getPaginationRowModel, getSortedRowModel } from "@tanstack/react-table";
 
 export default function ReviewPage() {
   const router = useRouter();
@@ -13,6 +14,14 @@ export default function ReviewPage() {
   useEffect(() => {
     if (rows.length === 0) router.push("/");
   }, [rows, router]);
+
+  const table = useReactTable({
+    data: rows,
+    columns: paymentColumns,
+    getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+  });
 
   const counts = {
     valid: rows.filter((r) => r.status === "valid").length,
@@ -36,7 +45,7 @@ export default function ReviewPage() {
           {rows.length} total
         </div>
       </div>
-      <DataTable columns={paymentColumns} data={rows} />
+      <DataTable table={table} />
       <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
         <button onClick={() => router.push("/mapping")} style={{ padding: "0.6rem 1.5rem", borderRadius: "8px", border: "1px solid #d1d5db", background: "white", cursor: "pointer" }}>
           Back
